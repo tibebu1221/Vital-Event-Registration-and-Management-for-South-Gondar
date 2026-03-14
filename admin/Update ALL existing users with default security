@@ -6,4 +6,4 @@ SET
 WHERE security_question IS NULL 
    OR security_question = '' 
    OR security_answer IS NULL 
-   OR security_answer = '';
+   OR security_answer = '';hheeee
