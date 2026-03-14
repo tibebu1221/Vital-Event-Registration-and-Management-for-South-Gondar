@@ -1,0 +1,9 @@
+-- Update ALL existing users with default security questions
+UPDATE users 
+SET 
+    security_question = 'What is your memorable security question?',
+    security_answer = '1234'
+WHERE security_question IS NULL 
+   OR security_question = '' 
+   OR security_answer IS NULL 
+   OR security_answer = '';

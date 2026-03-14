@@ -1,0 +1,149 @@
+admin/
+├── admin_dashboard.php
+│   - Description: This file represents the dashboard interface for the admin .
+│   - Functionality: Displays summary information and links to various administrative tasks.
+├── manage_account.php
+│   - Description: Interface for creating accounts , updating account , resetting passwords,  by the admin.
+│   - Functionality: Allows the admin to create new accounts for managers and ticket officers.
+
+├── reset_password.php
+│   - Description: Interface for resetting passwords by the admin.
+│   - Functionality: Enables the admin to reset passwords for users who have forgotten or lost them.
+
+├── update_account.php
+│   - Description: Interface for updating account information by the admin.
+│   - Functionality: Allows the admin to modify or change account details for managers and ticket officers.
+
+├── post_notice_news.php
+│   - Description: Interface for posting notices and news by the admin.
+│   - Functionality: Enables the admin to post relevant notices and news for users.
+
+└── view_comments.php
+    - Description: Interface for viewing comments by the admin.
+    - Functionality: Provides access to user comments for the admin to review and respond.
+manager/
+│
+├── manager_dashboard.php
+│   - Description: This file represents the dashboard interface for the manager user.
+│   - Functionality: Displays summary information and links to various tasks.
+
+├── generate_report.php
+│   - Description: Interface for generating customized reports for the manager user.
+│   - Functionality: Allows the manager to generate reports on work range and system usage status.
+
+├── cancel_reserved_ticket.php
+│   - Description: Interface for canceling reserved tickets by the manager user.
+│   - Functionality: Enables the manager to cancel tickets after passengers have boarded the bus.
+
+├── update_passenger_data.php
+│   - Description: Interface for updating passenger data by the manager user.
+│   - Functionality: Allows the manager to update passenger information as needed.
+
+├── view_passenger_data.php
+│   - Description: Interface for viewing passenger data by the manager user.
+│   - Functionality: Provides the manager with access to view passenger information and ensure proper form filling.
+
+├── postpone_reservation.php
+│   - Description: Interface for postponing reserved tickets by the manager user.
+│   - Functionality: Allows the manager to postpone tickets if passengers encounter unexpected circumstances.
+
+└── view_comments.php
+    - Description: Interface for viewing comments by the manager user.
+    - Functionality: Displays comments left by users regarding the organization's services and allows the manager to respond.
+
+ticket_officer/
+│
+├── ticket_officer_dashboard.php
+│   - Description: Dashboard interface for ticket officers.
+│   - Functionality: Displays summary information and links to ticket officer tasks.
+
+├── view_passenger_data.php
+│   - Description: Interface for viewing passenger data by ticket officers.
+│   - Functionality: Allows ticket officers to access and view passenger information.
+
+├── cancel_reserved_ticket.php
+│   - Description: Interface for canceling reserved tickets by ticket officers.
+│   - Functionality: Allows ticket officers to cancel tickets to prevent redundancy in the system.
+
+├── confirm_reservation.php
+│   - Description: Interface for confirming ticket reservations by ticket officers.
+│   - Functionality: Allows ticket officers to confirm ticket reservations requested by passengers.
+
+└── assign_bus.php
+    - Description: Interface for assigning buses to users for reservation by ticket officers.
+    - Functionality: Enables ticket officers to allocate buses to users for reservation.
+passenger/
+│
+├── passenger_dashboard.php
+│   - Description: Dashboard interface for passengers.
+│   - Functionality: Displays summary information and links to passenger tasks.
+
+├── view_payment_status.php
+│   - Description: Interface for viewing payment status by passengers.
+│   - Functionality: Allows passengers to check the status of their ticket payment.
+
+├── give_comment.php
+│   - Description: Interface for passengers to give feedback/comments.
+│   - Functionality: Allows passengers to provide feedback about the organization's services.
+
+├── reserve_ticket.php
+│   - Description: Interface for passengers to reserve tickets.
+│   - Functionality: Allows passengers to reserve tickets for bus journeys.
+
+├── view_route_information.php
+│   - Description: Interface for viewing route information by passengers.
+│   - Functionality: Provides passengers with information about bus routes.
+
+├── view_ticket_availability.php
+│   - Description: Interface for viewing ticket availability by passengers.
+│   - Functionality: Allows passengers to check the availability of tickets for desired travel dates and routes.
+
+├── view_seat_availability.php
+│   - Description: Interface for viewing seat availability by passengers.
+│   - Functionality: Allows passengers to check the availability of seats on buses.
+
+├── create_account.php
+│   - Description: Interface for creating accounts by passengers.
+│   - Functionality: Allows passengers to create accounts within the system.
+
+└── make_payment.php
+    - Description: Interface for making payments by passengers.
+    - Functionality: Allows passengers to make payments securely for ticket reservations.
+includes/
+│
+├── header.php
+│   - Description: Common header file included in all pages.
+│   - Functionality: Contains the header section of the HTML document.
+
+├── footer.php
+│   - Description: Common footer file included in all pages.
+│   - Functionality: Contains the footer section of the HTML document.
+
+└── db_connection.php
+    - Description: File for establishing database connection.
+    - Functionality: Contains code to connect to the database and provides connection object for database operations.
+css/
+│
+└── style.css
+    - Description: Cascading Style Sheets (CSS) file.
+    - Functionality: Contains styling rules to define the appearance and layout of HTML elements.
+js/
+│
+└── script.js
+    - Description: JavaScript (JS) file.
+    - Functionality: Contains client-side scripting code to add interactivity and behavior to web pages.
+images/
+│
+└── (Directory containing image files)
+    - Description: Directory containing image files used in the project, such as logos, icons, etc.
+index.php
+- Description: Main entry point of the application.
+- Functionality: Redirects users to the appropriate login page based on their role (manager, admin, ticket officer, or passenger).
+
+login.php
+- Description: Login page for user authentication.
+- Functionality: Allows users to log in using their credentials and grants access based on their role.
+
+logout.php
+- Description: Logout functionality.
+- Functionality: Logs users out of the system and redirects them to the login page.
